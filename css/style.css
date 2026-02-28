@@ -1,0 +1,288 @@
+body {
+    background-image: url(../img/banner.jpg);
+}
+
+.icono {
+    width: 50px;
+    height: 50px;
+}
+
+ul a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.descripcion {
+    font-family: "Nunito", sans-serif;
+    max-width: 50vw;
+    margin-left: 25vw;
+    text-align: center;
+    font-size: 20px;
+}
+
+#inicio {
+    text-align: center;
+    margin-top: 10vh;
+    font-size: 20px;
+}
+
+#inicio .button {
+    padding: 25px 75px;
+    font-size: 20px;
+    margin-top: 5vh;
+    text-decoration: none;
+}
+
+.button-container{
+    margin-top: 15vh;
+}
+
+.box-img {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 100vw;
+}
+
+.img-home{
+    width: 30vw;
+    height: auto; 
+    object-fit: cover;
+    margin-top: 20vh;
+}
+
+
+
+.presentacion {
+    font-family: "Changa One", sans-serif;
+    text-align: center;
+    color: brown;
+    margin-bottom: 10vh;
+    margin-top: 5vh;
+}
+
+
+.sub {
+    font-family: "Changa One", sans-serif;
+    color: brown;
+    margin-bottom: 10vh;
+}
+
+
+#beneficios {
+    display: flex;
+    align-items: center;
+    margin-left: 15vw;
+
+}
+
+.sub-beneficios {
+    max-width: 25vw;
+    font-family: "Changa One", sans-serif;
+    color: brown;
+}
+
+
+
+.container-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blanchedalmond;
+    margin: 100px;
+    padding: 45px;
+    border: 2px solid brown;
+    border-radius: 50px;
+    font-size: 18px;
+
+}
+
+
+.parrafo {
+    font-family: "Nunito", sans-serif;
+}
+
+
+.voluntarios {
+    width: 650px;
+    height: 400px;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+}
+
+#donacion {
+    margin: 65px;
+    font-size: 20px;
+
+}
+
+
+.form {
+    padding: 50px;
+    font-family: "Nunito", sans-serif;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+#ubicacion {
+    margin-top: 20vh;
+}
+
+
+.card-img-top {
+    width: 400px;
+    height: 400px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+
+
+.button {
+    background-color: brown;
+    color: blanchedalmond;
+    font-family: "Changa One", sans-serif;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 20px;
+
+}
+
+.button:hover {
+    background-color: blanchedalmond;
+    color: brown;
+    transition: 0.2s;
+}
+
+footer .sub {
+    margin-bottom: 0;
+}
+
+#pie {
+    margin-top: 100px;
+    width: 100%;
+    background-color: blanchedalmond;
+    text-align: center;
+}
+
+#pie-submit {
+    margin-top: 50px;
+    width: 100%;
+    background-color: blanchedalmond;
+    text-align: center;
+}
+
+/*Media*/
+
+@media (max-width: 768px) {
+
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* txt*/
+    .descripcion {
+        max-width: 90vw;
+        margin-left: 5vw;
+        font-size: 16px;
+    }
+
+    #inicio {
+        font-size: 16px;
+        margin-top: 5vh;
+        margin:15px;
+    }
+
+    #inicio .button {
+        padding: 15px 40px;
+        font-size: 16px;
+    }
+
+    .button-container {
+        margin-top: 8vh;
+    }
+
+    /*Img*/
+    .box-img {
+        grid-template-columns: 1fr;
+        width: 100%;
+        justify-items: center;
+    }
+
+    .img-home {
+        width: 90vw;
+        margin-top: 5vh;
+    }
+
+    /*títulos*/
+    .presentacion {
+        font-size: 22px;
+        margin-bottom: 5vh;
+    }
+
+    .sub {
+        margin-bottom: 5vh;
+        text-align: center;
+    }
+
+    
+    #beneficios {
+        flex-direction: column;
+        margin-left: 0;
+        text-align: left;
+        gap: 20px;
+    }
+
+    .sub-beneficios {
+        max-width: 90vw;
+        margin-top: 5rem;
+    }
+
+    
+    .container-box {
+        margin: 20px;
+        padding: 20px;
+        font-size: 16px;
+        border-radius: 25px;
+    }
+
+    .icono {
+        width: 40px;
+        height: 40px;
+    }
+
+    /*quienes somos*/
+
+    .voluntarios {
+        width: 90vw;    
+        height: auto;    
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+
+    #donacion {
+        margin: 20px;  
+        font-size: 16px;  
+        text-align: center;
+    }
+
+    .parrafo {
+        font-size: 16px;
+        text-align: center;
+    }
+
+
+    /*footer*/
+
+    footer .sub {
+        font-size: 18px;
+    }
+}
