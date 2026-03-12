@@ -7,6 +7,7 @@
     <!--link boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--link estilos-->
     <link rel="stylesheet" href="./css/style.css">
     <title>ADOPTÁ A UNA MASCOTA</title>
 </head>
@@ -46,34 +47,77 @@
 
     <main>
         <section id="inicio">
-            <h1 class="presentacion">ADOPTÁ UNA MASCOTA</h1>
-            <p class="descripcion">Rescatamos animales en situación de calle, los cuidamos y los acompañamos hasta
-                encontrar hogares llenos de amor y seguridad.</p>
+            <div class="inicio-texto">
+                <h1 class="presentacion">ADOPTÁ UNA MASCOTA</h1>
+                <p class="descripcion">Rescatamos animales en situación de calle, los cuidamos y los acompañamos hasta
+                    encontrar hogares llenos de amor y seguridad.</p>
 
-            <div class="button-container"> 
-                <a class="button" href="./pages/adopcion.html">COLABORAR</a>
+                <div class="button-container">
+                    <a class="button" href="./pages/adopcion.html">COLABORAR</a>
+                </div>
             </div>
 
             <div class="box-img">
-                <img class="img-home" src="./img/home/duogatitos.jpg" alt="gato gris y negro">
-                <img class="img-home" src="./img/home/perrito2.jpg" alt="perro color marron echado">
-                <img class="img-home" src="./img/home/perrito-4.jpg"
-                    alt="perro color blanco y marron claro con la lengua afuera echado al sol">
+                <a href="./pages/adopcion.html" class="flip-card">
+                        <div class="flip-card-inner">
+
+                            <div class="flip-card-front">
+                                <img src="./img/home/perrito2.jpg" alt="perro marrón">
+                            </div>
+
+                            <div class="flip-card-back">
+                                <h3>ADOPTÁ</h3>
+                                <p>Dale una segunda oportunidad a un ser lleno de amor ❤️.</p>
+                            </div>
+
+                        </div>
+                </a>
+
+                <a href="./pages/quienes.html" class="flip-card">
+                        <div class="flip-card-inner">
+
+                            <div class="flip-card-front">
+                                <img src="./img/home/duogatitos.jpg" alt="gatitos">
+                            </div>
+
+                            <div class="flip-card-back">
+                                <h3>COLABORÁ CON EL REFUGIO</h3>
+                                <p>Con tu ayuda podemos seguir rescatando más animales 🐾.</p>
+                            </div>
+
+                        </div>
+                </a>
+
+                <a href="./pages/contacto.html"  class="flip-card">
+                    <div class="flip-card-inner">
+
+                        <div class="flip-card-front">
+                            <img src="./img/home/perrito-4.jpg" alt="perro blanco y marrón">
+                        </div>
+
+                        <div class="flip-card-back">
+                            <h3>VISITANOS</h3>
+                            <p>Tu visita alegrará a un montón de animales que necesitan mimos y amor 🐱. </p>
+                        </div>
+
+                    </div>
+                </a>
+
             </div>
+
         </section>
 
         <section id="beneficios">
             <h2 class="sub-beneficios">5 beneficios de adoptar una mascota</h2>
             <div class="container-box">
                 <ol class="lista">
-                    <li>Brindan compañía y reducen la sensación de soledad.</li>
-                    <li>Ayudan a disminuir el estrés y la ansiedad.</li>
-                    <li>Fomentan la actividad física y hábitos más saludables.</li>
-                    <li>Mejoran el estado de ánimo y el bienestar emocional.</li>
-                    <li>Promueven la responsabilidad y el compromiso.</li>
+                    <li>🐶 Brindan compañía y reducen la sensación de soledad.</li>
+                    <li>💚 Ayudan a disminuir el estrés y la ansiedad.</li>
+                    <li>🚶‍♀️ Fomentan la actividad física y hábitos saludables.</li>
+                    <li>😊 Mejoran el estado de ánimo.</li>
+                    <li>⭐ Promueven la responsabilidad y el compromiso.</li>
                 </ol>
             </div>
-
         </section>
 
 
@@ -81,9 +125,11 @@
 
     <footer id="pie">
         <h3 class="sub">Seguinos en nuestras redes sociales</h3>
-        <a href="https://instagram.com">Instagram</a>
-        <a href="https://facebook.com">Facebook</a>
-        <a href="https://tiktok.com">TikTok</a>
+        <div class="apps">
+            <a href="https://www.facebook.com"><img src="./img/footer/fb.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com"><img src="./img/footer/instagram.png" alt="Instagram"></a>
+            <a href="https://www.tiktok.com"><img src="./img/footer/tiktok.png" alt="TikTok"></a>
+        </div>
         <p>
             © 2026 Adoptá Una Mascota - Todos los derechos reservados
         </p>

@@ -1,123 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--link boostrap-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-        <link rel="stylesheet" href="../css/style.css">
-        <title>Contacto - ADOPTÁ A UNA MASCOTA</title>
-    </head>
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img class="icono" src="../img/corazon-huellas-patas.png" alt="Logo" width="30" height="24"
-                            class="d-inline-block align-text-top">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./quienes.html">Quienes Somos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contacto.html">Contacto</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./adopcion.html">En adopción</a>
-                            </li>
-                        </ul>
-                    </div>
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contacto - ADOPTÁ A UNA MASCOTA</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="icono" src="../img/corazon-huellas-patas.png" alt="Logo" width="30" height="24"
+                        class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./quienes.html">Quienes Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./adopcion.html">En adopción</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
+    </header>
 
-        <main class="form">
-            <section id="formulario">
+    <main class="form">
+        <section id="formulario">
+            <form class="form-container" action="../pages/submit.html" method="get">
                 <h1 class="sub">CONTACTO</h1>
-                <form class="form-container" action="../pages/submit.html" method="get">
-                    <div> 
-                        <label for="">Nombre:</label>
-                        <input type="text" name="nombre" id="nombre">
-                    </div>
+                <div>
+                    <label for="">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre">
+                </div>
 
-                    <div>
-                        <label for="">Apellido:</label>
-                        <input type="text" name="apellido" id="apellido">
-                    </div> 
-                
-                    <div>
-                        <label for="">Género:</label>
-                        <input type="radio">
-                        <label for="">Mujer</label>
+                <div>
+                    <label for="">Apellido:</label>
+                    <input type="text" name="apellido" id="apellido">
+                </div>
 
-                        <input type="radio">
-                        <label for="">Hombre</label>
+                <div>
+                    <label for="">Género:</label>
+                    <input type="radio">
+                    <label for="">Mujer</label>
 
-                        <input type="radio">
-                        <label for="">Prefiero no decirlo</label>
-                    </div>   
-                    <div>
-                        <label for="">Teléfono:</label>
-                        <input type="tel" name="Teléfono" id="TELEFONO">
-                    </div>
-                    
+                    <input type="radio">
+                    <label for="">Hombre</label>
 
-                    <div>
-                        <label for="">Correo Electrónico:</label>
-                        <input type="text" name="correo" id="correo">
-                    </div>
+                    <input type="radio">
+                    <label for="">Prefiero no decirlo</label>
+                </div>
+                <div>
+                    <label for="">Teléfono:</label>
+                    <input type="tel" name="Teléfono" id="TELEFONO">
+                </div>
 
-                    <div>
-                        <label for="Consulta">Consulta:</label>
-                        <select name="seleccionar" id="seleccionar">
-                            <option value="">Quiero adoptar</option>
-                            <option value="">Quiero apadrinar</option>
-                            <option value="">Quiero donar</option>
-                            <option value="">Quiero ser voluntario/a</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="">Mensaje:</label>
-                        <textarea name="mensaje" id="mensaje"></textarea>
-                    </div>
 
-                    <div>
-                        <label for="suscribe">Suscribirse:</label>
-                        <input type="checkbox" name="suscribe">
-                    </div>
+                <div>
+                    <label for="">Correo Electrónico:</label>
+                    <input type="text" name="correo" id="correo">
+                </div>
 
-                    <div>
-                        <input class="button" type="submit" value="Enviar">
-                    </div>
-                </form>
-            </section>
+                <div>
+                    <label for="Consulta">Consulta:</label>
+                    <select name="seleccionar" id="seleccionar">
+                        <option value="">Quiero adoptar</option>
+                        <option value="">Quiero apadrinar</option>
+                        <option value="">Quiero donar</option>
+                        <option value="">Quiero ser voluntario/a</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="">Mensaje:</label>
+                    <textarea name="mensaje" id="mensaje"></textarea>
+                </div>
 
-            <section id="ubicacion">
+                <div>
+                    <label for="suscribe">Suscribirse:</label>
+                    <input type="checkbox" name="suscribe">
+                </div>
+
+                <div>
+                    <input class="button" type="submit" value="Enviar">
+                </div>
+            </form>
+
+
+            <div class="mapa">
                 <h2 class="sub">¿Dónde nos encontramos?</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.608775634374!2d-58.43535412419859!3d-34.89116917285264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd524123fd69d%3A0xc8636b72951eb39b!2sEl%20campito%20Refugio!5e0!3m2!1ses!2ses!4v1768772442476!5m2!1ses!2ses" width="450" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section>
-        </main>
-        
-        <footer id="pie">   
-            <h3 class="sub">Seguinos en nuestras redes sociales</h3>
-            <a href="https://instagram.com">Instagram</a>
-            <a href="https://facebook.com">Facebook</a>
-            <a href="https://tiktok.com">TikTok</a>
-            <p>
-                © 2026 Adoptá Una Mascota - Todos los derechos reservados
-            </p> 
-        </footer>
-        <!--js de boostrap-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    </body>
+                <div class="map-container">
+                    <p class="parrafo">Ruta 16, Parcela 501, B1842 Monte Grande, Provincia de Buenos Aires.</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.608775634374!2d-58.43535412419859!3d-34.89116917285264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd524123fd69d%3A0xc8636b72951eb39b!2sEl%20campito%20Refugio!5e0!3m2!1ses!2ses!4v1768772442476!5m2!1ses!2ses"
+                        allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="pie">
+        <h3 class="sub">Seguinos en nuestras redes sociales</h3>
+        <div class="apps">
+            <a href="https://www.facebook.com"><img src="../img/footer/fb.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com"><img src="../img/footer/instagram.png" alt="Instagram"></a>
+            <a href="https://www.tiktok.com"><img src="../img/footer/tiktok.png" alt="TikTok"></a>
+        </div>
+        <p>
+            © 2026 Adoptá Una Mascota - Todos los derechos reservados
+        </p>
+    </footer>
+    <!--js de boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
