@@ -1,0 +1,401 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Gravitas+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+.flip-card {
+  width: 100%;
+  max-width: 650px;
+  height: 400px;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-inner {
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-inner-child, .flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  background-color: #ffebcd;
+  color: #a52a2a;
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+.flip-card-back h3 {
+  margin-bottom: 10px;
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/banner.jpg);
+}
+
+.sub {
+  font-family: "Changa One", sans-serif;
+  color: #a52a2a;
+  margin-bottom: 10vh;
+  margin-top: 15vh;
+  text-shadow: 2px 2px 4px #ffebcd;
+}
+
+.button {
+  background-color: #a52a2a;
+  color: #ffebcd;
+  font-family: "Changa One", sans-serif;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+.button:hover {
+  background-color: #ffebcd;
+  color: #a52a2a;
+  transition: 0.2s;
+}
+
+header {
+  position: sticky;
+  background-color: #ffffff;
+  top: 0;
+  z-index: 1000;
+}
+header .icono {
+  width: 100px;
+  height: 100px;
+}
+header ul a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#pie, #pie-submit {
+  width: 100%;
+  background-color: #ffebcd;
+  text-align: center;
+  margin-top: 20vh;
+}
+#pie .sub, #pie-submit .sub {
+  margin-bottom: 10px;
+}
+#pie .apps img, #pie-submit .apps img {
+  width: 3vw;
+  height: 6vh;
+  margin: 10px;
+}
+
+#pie-submit {
+  margin-top: 30vh;
+}
+
+.parrafo {
+  font-family: "Nunito", sans-serif;
+  font-size: 22px;
+  color: #000000;
+  text-shadow: 2px 2px 4px #ffebcd;
+}
+
+/*MAIN*/
+/*Titulo*/
+#inicio {
+  text-align: center;
+  font-size: 20px;
+}
+
+.presentacion {
+  font-family: "Changa One", sans-serif;
+  text-align: center;
+  color: #a52a2a;
+  margin-bottom: 25vh;
+  font-size: 15vh;
+  position: relative;
+  top: 15vh;
+  text-shadow: 2px 2px 4px #ffebcd;
+}
+
+.descripcion {
+  font-family: "Nunito", sans-serif;
+  max-width: 50vw;
+  margin-left: 25vw;
+  text-align: center;
+  font-size: 25px;
+  color: #a52a2a;
+  text-shadow: 2px 2px 4px #ffebcd;
+}
+
+.button-container {
+  margin-top: 15vh;
+}
+.button-container .button {
+  padding: 25px 75px;
+  font-size: 20px;
+  margin-top: 5vh;
+  text-decoration: none;
+}
+
+.box-img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 60px;
+  margin-top: 30vh;
+}
+
+#beneficios {
+  text-align: center;
+  margin: 80px 20px;
+}
+#beneficios .sub-beneficios {
+  font-family: "Changa One", sans-serif;
+  color: #a52a2a;
+  text-shadow: 2px 2px 4px #ffebcd;
+  font-size: 7vh;
+}
+#beneficios .container-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffebcd;
+  margin: 100px;
+  padding: 45px;
+  border: 2px solid #a52a2a;
+  border-radius: 50px;
+  font-size: 18px;
+}
+#beneficios .container-box .lista {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+}
+#beneficios .container-box .lista li {
+  background: #fff7ef;
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 18px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+#beneficios .container-box .lista li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.voluntarios-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20vh;
+  flex-wrap: wrap;
+}
+
+#donacion {
+  margin: 65px;
+  font-size: 20px;
+}
+#donacion .parrafo {
+  margin-bottom: 15vh;
+}
+#donacion .button {
+  padding: 25px 75px;
+  font-size: 20px;
+  margin-top: 5vh;
+  text-decoration: none;
+}
+
+.form {
+  padding: 50px;
+  font-family: "Nunito", sans-serif;
+}
+.form #formulario {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.form #formulario .form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.map-container {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+.map-container iframe {
+  width: 100%;
+  height: 350px;
+  padding: 20px;
+  border: 0;
+}
+
+#consulta {
+  margin: 30px;
+  font-size: 20px;
+}
+
+.container-adopcion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+  padding: 45px;
+  font-size: 25px;
+}
+
+#img-adopcion {
+  margin: 30px;
+}
+#img-adopcion .card:hover {
+  transform: scale(1.03);
+  transition: 0.2s;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-size: cover;
+    background-position: center;
+  }
+  /*SECCIÓN HOME*/
+  .presentacion {
+    font-size: 6vh;
+    margin-bottom: 10vh;
+    top: 5vh;
+  }
+  .descripcion {
+    max-width: 90vw;
+    margin-left: 5vw;
+    font-size: 18px;
+  }
+  .box-img {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 20px;
+    margin-top: 10vh;
+  }
+  .sub {
+    margin-top: 8vh;
+    margin-bottom: 5vh;
+  }
+  .sub-beneficios {
+    font-size: 4vh;
+  }
+  .lista li {
+    font-size: 16px;
+    padding: 15px;
+  }
+  #beneficios .container-box {
+    margin: 40px 10px;
+    padding: 20px;
+    border-radius: 30px;
+  }
+  #inicio .button {
+    padding: 15px 40px;
+    font-size: 18px;
+  }
+  .icono {
+    width: 40px;
+    height: 40px;
+  }
+  /*SECCIÓN QUIENES SOMOS*/
+  .voluntarios-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+  .flip-card {
+    max-width: 90vw;
+    height: 260px;
+  }
+  .flip-card-back {
+    font-size: 14px;
+    padding: 15px;
+  }
+  .flip-card-back h3 {
+    font-size: 18px;
+  }
+  #donacion {
+    margin: 20px;
+    font-size: 16px;
+    text-align: center;
+  }
+  .parrafo {
+    font-size: 18px;
+    text-align: center;
+  }
+  /*SECCIÓN CONTACTO*/
+  #formulario {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .form {
+    padding: 25px;
+    width: 90%;
+    margin: 20px;
+  }
+  .form-container {
+    gap: 20px;
+  }
+  #ubicacion {
+    margin-top: 5vh;
+  }
+  .mapa h2 {
+    text-align: center;
+  }
+  .map-container iframe {
+    height: 250px;
+  }
+  /*SECCIÓN ADOPCIÓN*/
+  .container-adopcion {
+    margin: 20px 15px;
+    padding: 20px;
+    font-size: 16px;
+  }
+  .card-img-top {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+  /*FOOTER*/
+  #pie, #pie-submit {
+    margin-top: 50px;
+    padding: 15px;
+  }
+  #pie .apps img, #pie-submit .apps img {
+    width: 30px;
+    margin: 6px;
+  }
+  #pie-submit {
+    margin-top: 150px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

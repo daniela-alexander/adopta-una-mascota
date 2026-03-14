@@ -1,0 +1,53 @@
+@use "./variables" as *;
+
+//HEADER//
+header {
+    position: sticky;
+    background-color: $white;
+    top: 0;
+    z-index: 1000;
+
+    .icono {
+        width: 100px;
+        height: 100px;
+    }
+
+    ul a {
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+//FOOTER//
+//FOOTER SUBMIT//
+#pie {
+    width: 100%;
+    background-color: $almond;
+    text-align: center;
+    margin-top: 20vh;
+    .sub {
+        margin-bottom: 10px;
+    }
+
+    .apps {
+        img {
+            width: 3vw;
+            height: 6vh;
+            margin: 10px;
+        }
+
+    }
+}
+
+#pie-submit {
+    @extend #pie;
+    margin-top: 30vh;
+}
+
+//PARRAFOS GENERALES//
+.parrafo {
+    font-family: $font_parrafo;
+    font-size: 22px;
+    color: $black;
+    text-shadow: 2px 2px 4px $almond;
+}

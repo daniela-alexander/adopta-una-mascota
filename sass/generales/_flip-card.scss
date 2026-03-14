@@ -1,0 +1,56 @@
+@use "./variables" as *;
+
+.flip-card {
+    width: 100%;
+    max-width: 650px;
+    height: 400px;
+
+    &:hover {
+        .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+    }
+}
+
+.flip-card-inner {
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-inner-child {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    @extend .flip-card-inner-child;
+    background-color: $almond;
+    color: $brown;
+    font-family: $font_parrafo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    transform: rotateY(180deg);
+
+    h3 {
+        margin-bottom: 10px;
+    }
+}
+
+.flip-card-front {
+    @extend .flip-card-inner-child;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

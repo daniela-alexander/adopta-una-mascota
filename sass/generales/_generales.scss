@@ -1,0 +1,43 @@
+@use "./variables" as *;
+
+//FUENTE TEXTO//
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Gravitas+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+//RESET//
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//BODY//
+body {
+    background-image: url(../img/banner.jpg);
+}
+
+//SUB GENERALES//
+.sub {
+    font-family: $font_title;
+    color: $brown;
+    margin-bottom: 10vh;
+    margin-top: 15vh;
+    text-shadow: 2px 2px 4px $almond;
+}
+
+//BOTONES GENERALES//
+.button {
+    background-color: $brown;
+    color: $almond;
+    font-family: $font_title;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 20px;
+    &:hover{
+        background-color: $almond;
+        color: $brown;
+        transition: 0.2s;
+    }
+}
+

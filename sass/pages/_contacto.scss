@@ -1,0 +1,32 @@
+@use "../generales/variables" as *;
+
+//CONTACTO//
+.form {
+    padding: 50px;
+    font-family: $font_parrafo;
+
+    #formulario {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+}
+
+.map-container {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+
+    iframe {
+        width: 100%;
+        height: 350px;
+        padding: 20px;
+        border: 0;
+    }
+}

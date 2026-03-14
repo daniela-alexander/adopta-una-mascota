@@ -1,0 +1,92 @@
+@use "../generales/variables" as *;
+
+/*MAIN*/
+/*Titulo*/
+#inicio {
+    text-align: center;
+    font-size: 20px;
+}
+
+.presentacion {
+    font-family: $font_title;
+    text-align: center;
+    color: $brown;
+    margin-bottom: 25vh;
+    font-size: 15vh;
+    position: relative;
+    top: 15vh;
+    text-shadow: 2px 2px 4px $almond;
+}
+
+.descripcion {
+    font-family: $font_parrafo;
+    max-width: 50vw;
+    margin-left: 25vw;
+    text-align: center;
+    font-size: 25px;
+    color: $brown;
+    text-shadow: 2px 2px 4px $almond;
+}
+
+.button-container {
+    margin-top: 15vh;
+
+    .button {
+        padding: 25px 75px;
+        font-size: 20px;
+        margin-top: 5vh;
+        text-decoration: none;
+    }
+}
+
+.box-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 60px;
+    margin-top: 30vh;
+}
+
+#beneficios {
+    text-align: center;
+    margin: 80px 20px;
+
+    .sub-beneficios {
+        font-family: $font_title;
+        color: $brown;
+        text-shadow: 2px 2px 4px $almond;
+        font-size: 7vh;
+    }
+    .container-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $almond;
+        margin: 100px;
+        padding: 45px;
+        border: 2px solid $brown;
+        border-radius: 50px;
+        font-size: 18px;
+
+        .lista {
+            list-style: none;
+            padding: 0;
+            max-width: 700px;
+
+            li {
+                background: $white_almond;
+                margin: 15px 0;
+                padding: 20px;
+                border-radius: 12px;
+                font-size: 18px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+                &:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@use "../generales/variables" as *;
+
+//ADOPCIÓN//
+
+.container-adopcion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    padding: 45px;
+    font-size: 25px;
+
+}
+
+#img-adopcion {
+    margin: 30px;
+    .card {
+        &:hover {
+            transform: scale(1.03);
+            transition: 0.2s;
+        }
+    }
+}
