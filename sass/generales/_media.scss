@@ -1,3 +1,190 @@
+/*MEDIA TABLET*/
+@mixin pie-tablet{
+    margin-top: 40px;
+        padding: 20px;
+
+        .apps {
+            img {
+                width: 55px;
+                margin: 8px;
+            }
+        }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* SECCIÓN HOME */
+    .presentacion {
+        font-size: 5vh;
+        margin-bottom: 8vh;
+        top: 4vh;
+    }
+
+    .descripcion {
+        max-width: 80vw;
+        margin-left: 10vw;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .box-img {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding: 30px;
+        margin-top: 8vh;
+        place-items: center;
+    }
+
+    .sub {
+        margin-top: 6vh;
+        margin-bottom: 4vh;
+    }
+
+    .sub-beneficios {
+        font-size: 3.5vh;
+        text-align: center;
+    }
+
+    .lista {
+        li {
+            font-size: 17px;
+            padding: 12px;
+        }
+    }
+
+    #beneficios {
+        .container-box {
+            margin: 30px 20px;
+            padding: 25px;
+            border-radius: 25px;
+        }
+    }
+
+    #inicio {
+        .button {
+            padding: 14px 35px;
+            font-size: 25px;
+        }
+    }
+
+    .icono {
+        width: 45px;
+        height: 45px;
+    }
+
+    /* SECCIÓN QUIÉNES SOMOS */
+
+    .voluntarios-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .flip-card {
+        max-width: 70%;
+    }
+
+    .flip-card-back {
+        font-size: 15px;
+        padding: 18px;
+    }
+
+    .flip-card-back {
+        h3 {
+            font-size: 20px;
+        }
+    }
+
+    #donacion {
+        margin: 30px;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .parrafo {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    /* SECCIÓN CONTACTO */
+
+    #formulario {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .form {
+        padding: 30px;
+        width: 80%;
+        margin: 20px;
+    }
+
+    .form-container {
+        gap: 18px;
+    }
+
+    #ubicacion {
+        margin-top: 4vh;
+    }
+
+    .mapa {
+        h2 {
+            text-align: center;
+        }
+    }
+
+    .map-container {
+        iframe {
+            height: 300px;
+        }
+    }
+
+    /* SECCIÓN ADOPCIÓN */
+
+    .container-adopcion {
+        margin: 25px 20px;
+        padding: 25px;
+        font-size: 17px;
+    }
+
+    .card-img-top {
+        width: 100%;
+        height: auto;
+        padding: 8px;
+    }
+
+    /* FOOTER */
+    #pie{
+        @include pie-tablet;
+    }
+    
+
+    #pie-submit {
+        @include pie-tablet;
+        margin-top: 41vh;
+    }
+}
+
+
+/*MEDIA MOBILE*/
+@mixin pie-mobile{
+    margin-top: 50px;
+        padding: 15px;
+        .apps {
+            img {
+                width: 40px;
+                margin: 6px;
+            }
+        }
+}
+
+
 @media (max-width: 768px) {
 
     body {
@@ -149,18 +336,11 @@
     /*FOOTER*/
 
     #pie {
-        margin-top: 50px;
-        padding: 15px;
-        .apps {
-            img {
-                width: 30px;
-                margin: 6px;
-            }
-        }
+       @include pie-mobile;
     }
 
     #pie-submit {
-        @extend #pie;
+        @include pie-mobile;
         margin-top: 150px;
     }
 }
